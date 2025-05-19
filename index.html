@@ -1,83 +1,38 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RAHMANbnb - Your trusted Airbnb property manager in Dubai" />
-  <title>RAHMANbnb | Airbnb Property Management in Dubai</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">RAHMANbnb</h1>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#languages">Language</a>
-      </nav>
-    </div>
-  </header>  <section class="hero">
-    <div class="container">
-      <h2>Your Property. Our Priority.</h2>
-      <p>Professional Airbnb Management in Dubai. Stress-free. Profitable. Transparent.</p>
-      <a href="#contact" class="btn-primary">List Your Property</a>
-    </div>
-  </section>  <section id="about" class="about">
-    <div class="container">
-      <h3>Why RAHMANbnb?</h3>
-      <p>We help property owners in Dubai earn passive income through Airbnb — even if you live abroad.</p>
-      <ul>
-        <li>Professional Management</li>
-        <li>Interior Setup & Photography</li>
-        <li>Guest Communication & Cleaning</li>
-        <li>Monthly Reporting & Payments</li>
-      </ul>
-    </div>
-  </section>  <section id="services" class="services">
-    <div class="container">
-      <h3>Our Services</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Full Airbnb Management</h4>
-          <p>We handle everything: setup, listing, guests, cleaning, and pricing.</p>
-        </div>
-        <div class="card">
-          <h4>Interior Styling</h4>
-          <p>We furnish your property to look modern, cozy, and Instagram-worthy.</p>
-        </div>
-        <div class="card">
-          <h4>24/7 Guest Support</h4>
-          <p>We manage guest communication, check-in/out, and ensure 5-star experiences.</p>
-        </div>
-      </div>
-    </div>
-  </section>  <section id="contact" class="contact">
-    <div class="container">
-      <h3>Contact Us</h3>
-      <p>Ready to maximize your rental income? Contact us now via WhatsApp or email.</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/491634303722">+49 163 4303722</a></p>
-      <p><strong>Email:</strong> contact@rahmanbnb.com</p>
-      <p><strong>Instagram:</strong> <a href="https://instagram.com/rahman_bnb" target="_blank">@rahman_bnb</a></p>
-    </div>
-  </section>  <section id="languages" class="languages">
-    <div class="container">
-      <h4>Choose Language:</h4>
-      <select onchange="changeLanguage(this.value)">
-        <option value="en">English</option>
-        <option value="so">Somali</option>
-        <option value="ar">Arabic</option>
-      </select>
-    </div>
-  </section>  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 RAHMANbnb. All rights reserved.</p>
-    </div>
-  </footer>  <script>
-    function changeLanguage(lang) {
-      alert("Language switching will be fully enabled soon. Selected: " + lang);
-    }
-  </script></body>
-</html>
+/* styles.css */
+
+body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fff; color: #333; line-height: 1.6; }
+
+.container { width: 90%; max-width: 1200px; margin: auto; padding: 1rem; }
+
+.header { background-color: #1c1c1c; color: gold; padding: 1rem 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); position: sticky; top: 0; z-index: 1000; }
+
+.logo { font-size: 1.8rem; font-weight: 700; text-transform: uppercase; color: gold; }
+
+.nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.nav a { color: gold; text-decoration: none; font-weight: 600; }
+
+.hero { background: linear-gradient(to bottom right, #f5d742, #fffbe6); text-align: center; padding: 4rem 2rem; color: #1c1c1c; }
+
+.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+.btn-primary { background-color: gold; color: #1c1c1c; padding: 0.75rem 1.5rem; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s ease; }
+
+.btn-primary:hover { background-color: #e6c200; }
+
+.about, .services, .contact, .languages { padding: 3rem 0; background-color: #f9f9f9; }
+
+.about h3, .services h3, .contact h3, .languages h4 { color: #1c1c1c; margin-bottom: 1rem; }
+
+.grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.card { background-color: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease; }
+
+.card:hover { transform: translateY(-5px); }
+
+.contact p a { color: #1c1c1c; text-decoration: underline; }
+
+footer { background-color: #1c1c1c; color: white; padding: 1rem 0; text-align: center; }
+
+select { padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; font-family: 'Poppins', sans-serif; }
+
