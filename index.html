@@ -1,38 +1,116 @@
-/* styles.css */
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAHMANbnb</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="logo">RAHMANbnb</div>
+      <div class="nav">
+        <a href="#about" data-key="nav_about">About</a>
+        <a href="#services" data-key="nav_services">Services</a>
+        <a href="#contact" data-key="nav_contact">Contact</a>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="so">Somali</option>
+        </select>
+      </div>
+    </div>
+  </div>  <section class="hero">
+    <h2 data-key="hero_title">Your Trusted Airbnb Partner in Dubai</h2>
+    <p data-key="hero_subtitle">We manage, market, and maximize your property's potential.</p>
+    <a href="#contact" class="btn-primary" data-key="hero_cta">Get Started</a>
+  </section>  <section class="about" id="about">
+    <div class="container">
+      <h3 data-key="about_title">Why Choose RAHMANbnb?</h3>
+      <p data-key="about_text">We handle everything from listing to guest support — ensuring your property earns more, with less hassle.</p>
+    </div>
+  </section>  <section class="services" id="services">
+    <div class="container">
+      <h3 data-key="services_title">Our Services</h3>
+      <div class="grid">
+        <div class="card" data-key="service1">Full Airbnb Management</div>
+        <div class="card" data-key="service2">Interior Design & Photography</div>
+        <div class="card" data-key="service3">24/7 Guest Communication</div>
+        <div class="card" data-key="service4">Dynamic Pricing Strategy</div>
+      </div>
+    </div>
+  </section>  <section class="contact" id="contact">
+    <div class="container">
+      <h3 data-key="contact_title">Contact Us</h3>
+      <p data-key="contact_text">Call or WhatsApp: <a href="tel:+491634303722">+49 163 4303722</a></p>
+      <p>Instagram: <a href="https://instagram.com/rahman_bnb" target="_blank">@rahman_bnb</a></p>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 RAHMANbnb. All rights reserved.</p>
+  </footer>  <script>
+    const translations = {
+      en: {
+        nav_about: "About",
+        nav_services: "Services",
+        nav_contact: "Contact",
+        hero_title: "Your Trusted Airbnb Partner in Dubai",
+        hero_subtitle: "We manage, market, and maximize your property's potential.",
+        hero_cta: "Get Started",
+        about_title: "Why Choose RAHMANbnb?",
+        about_text: "We handle everything from listing to guest support — ensuring your property earns more, with less hassle.",
+        services_title: "Our Services",
+        service1: "Full Airbnb Management",
+        service2: "Interior Design & Photography",
+        service3: "24/7 Guest Communication",
+        service4: "Dynamic Pricing Strategy",
+        contact_title: "Contact Us",
+        contact_text: "Call or WhatsApp:"
+      },
+      ar: {
+        nav_about: "معلومات عنا",
+        nav_services: "الخدمات",
+        nav_contact: "اتصل بنا",
+        hero_title: "شريك Airbnb الموثوق في دبي",
+        hero_subtitle: "ندير ونسوق ونعظم إمكانيات ممتلكاتك.",
+        hero_cta: "ابدأ الآن",
+        about_title: "لماذا تختار RAHMANbnb؟",
+        about_text: "ندير كل شيء من الإدراج إلى دعم الضيوف — لضمان أرباح أعلى مع مجهود أقل.",
+        services_title: "خدماتنا",
+        service1: "إدارة كاملة لـ Airbnb",
+        service2: "تصميم داخلي وتصوير احترافي",
+        service3: "تواصل مع الضيوف على مدار الساعة",
+        service4: "استراتيجية تسعير ديناميكية",
+        contact_title: "اتصل بنا",
+        contact_text: "اتصل أو راسلنا على الواتساب:"
+      },
+      so: {
+        nav_about: "Nagu saabsan",
+        nav_services: "Adeegyada",
+        nav_contact: "La xiriir",
+        hero_title: "Lamaanahaaga Airbnb ee lagu kalsoonaan karo ee Dubai",
+        hero_subtitle: "Waxaanu maamulnaa, xayaysiinaynaa, oo kor u qaadeynaa hantidaada."
+        ,hero_cta: "Bilow Hadda",
+        about_title: "Maxaad u dooraneysaa RAHMANbnb?",
+        about_text: "Waxaanu maamulnaa wax walba laga bilaabo liiska ilaa taageerada martida — si aad u hesho dakhli badan adoon dadaal badan bixin.",
+        services_title: "Adeegyadayada",
+        service1: "Maareynta Buuxda ee Airbnb",
+        service2: "Naqshad gudaha iyo sawir qaadis",
+        service3: "La xiriir martida 24/7",
+        service4: "Istaraatiijiyad qiimeyn firfircoon",
+        contact_title: "Nala soo xiriir",
+        contact_text: "Wac ama WhatsApp:"
+      }
+    };
 
-body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fff; color: #333; line-height: 1.6; }
-
-.container { width: 90%; max-width: 1200px; margin: auto; padding: 1rem; }
-
-.header { background-color: #1c1c1c; color: gold; padding: 1rem 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); position: sticky; top: 0; z-index: 1000; }
-
-.logo { font-size: 1.8rem; font-weight: 700; text-transform: uppercase; color: gold; }
-
-.nav { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-.nav a { color: gold; text-decoration: none; font-weight: 600; }
-
-.hero { background: linear-gradient(to bottom right, #f5d742, #fffbe6); text-align: center; padding: 4rem 2rem; color: #1c1c1c; }
-
-.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-
-.btn-primary { background-color: gold; color: #1c1c1c; padding: 0.75rem 1.5rem; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s ease; }
-
-.btn-primary:hover { background-color: #e6c200; }
-
-.about, .services, .contact, .languages { padding: 3rem 0; background-color: #f9f9f9; }
-
-.about h3, .services h3, .contact h3, .languages h4 { color: #1c1c1c; margin-bottom: 1rem; }
-
-.grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-
-.card { background-color: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease; }
-
-.card:hover { transform: translateY(-5px); }
-
-.contact p a { color: #1c1c1c; text-decoration: underline; }
-
-footer { background-color: #1c1c1c; color: white; padding: 1rem 0; text-align: center; }
-
-select { padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; font-family: 'Poppins', sans-serif; }
-
+    document.getElementById("language-select").addEventListener("change", (e) => {
+      const lang = e.target.value;
+      const elements = document.querySelectorAll("[data-key]");
+      elements.forEach((el) => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    });
+  </script></body>
+</html>
