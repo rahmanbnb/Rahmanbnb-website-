@@ -1,14 +1,83 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAHMANbnb</title>
+  <meta name="description" content="RAHMANbnb - Your trusted Airbnb property manager in Dubai" />
+  <title>RAHMANbnb | Airbnb Property Management in Dubai</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="font-family:sans-serif; background-color:#fefefe; margin:0; padding:20px;">
-  <h1 style="color:#f5a623;">Welcome to RAHMANbnb</h1>
-  <p>Professional Airbnb Property Management in Dubai.</p>
-  <p>Contact us: +49 163 4303722 | hello@rahmanbnb.com</p>
-</body>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">RAHMANbnb</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#languages">Language</a>
+      </nav>
+    </div>
+  </header>  <section class="hero">
+    <div class="container">
+      <h2>Your Property. Our Priority.</h2>
+      <p>Professional Airbnb Management in Dubai. Stress-free. Profitable. Transparent.</p>
+      <a href="#contact" class="btn-primary">List Your Property</a>
+    </div>
+  </section>  <section id="about" class="about">
+    <div class="container">
+      <h3>Why RAHMANbnb?</h3>
+      <p>We help property owners in Dubai earn passive income through Airbnb — even if you live abroad.</p>
+      <ul>
+        <li>Professional Management</li>
+        <li>Interior Setup & Photography</li>
+        <li>Guest Communication & Cleaning</li>
+        <li>Monthly Reporting & Payments</li>
+      </ul>
+    </div>
+  </section>  <section id="services" class="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Full Airbnb Management</h4>
+          <p>We handle everything: setup, listing, guests, cleaning, and pricing.</p>
+        </div>
+        <div class="card">
+          <h4>Interior Styling</h4>
+          <p>We furnish your property to look modern, cozy, and Instagram-worthy.</p>
+        </div>
+        <div class="card">
+          <h4>24/7 Guest Support</h4>
+          <p>We manage guest communication, check-in/out, and ensure 5-star experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>Ready to maximize your rental income? Contact us now via WhatsApp or email.</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/491634303722">+49 163 4303722</a></p>
+      <p><strong>Email:</strong> contact@rahmanbnb.com</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/rahman_bnb" target="_blank">@rahman_bnb</a></p>
+    </div>
+  </section>  <section id="languages" class="languages">
+    <div class="container">
+      <h4>Choose Language:</h4>
+      <select onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="so">Somali</option>
+        <option value="ar">Arabic</option>
+      </select>
+    </div>
+  </section>  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 RAHMANbnb. All rights reserved.</p>
+    </div>
+  </footer>  <script>
+    function changeLanguage(lang) {
+      alert("Language switching will be fully enabled soon. Selected: " + lang);
+    }
+  </script></body>
 </html>
